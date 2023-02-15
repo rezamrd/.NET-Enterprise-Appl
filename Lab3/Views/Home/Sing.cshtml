@@ -1,0 +1,40 @@
+﻿@using Microsoft.AspNetCore.Http;
+@{
+    Layout = "_Layout";
+
+    Int32 bottles = Convert.ToInt32(Context.Session.GetString("bottleQunatties"));
+}
+
+    <body>
+    <input type="submit" onclick="location.href='@Url.Action("SongForm","Home")'" value="Play again" />
+    @for (var i = bottles; i > -1; i--)
+    {
+        if (i > 2)
+        {
+            var bottle = i - 1;
+                    <p>@bottle green bottles hanging on the wall,</p>
+                    <p>@bottle green bottles hanging on the wall,</p>
+                    <p>And if one green bottle should accidentally fall,</p>
+                    <p>There'll be @bottle green bottles hanging on the wall.</p>
+                    <br \>
+        }
+        else if (i == 2)
+        {
+            var bottle = i - 1;
+                    <p>@bottle green bottles hanging on the wall,</p>
+                    <p>@bottle green bottles hanging on the wall,</p>
+                    <p>And if one green bottle should accidentally fall,</p>
+                    <p>There'll be @bottle green bottle hanging on the wall.</p>
+                    <br \>
+        }
+        else if (i == 1)
+        {
+            var bottle = i - 1;
+                    <p>@bottle green bottles hanging on the wall,</p>
+                    <p>@bottle green bottles hanging on the wall,</p>
+                    <p>And if one green bottle should accidentally fall,</p>
+                    <p>There'll be no green bottles hanging on the wall.</p>
+                    <br \>
+        }
+    }
+</body>

@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "SongForm";
+}
+
+@{
+    <form asp-controller="Home" asp-action="Sing" method="post">
+        <table>
+            <tr>
+                <td>Enter the number of bottles between 50 and 100:</td>
+                <td><input type="number" name="bottleQunatties" min="50" max="100"/></td>
+            </tr>
+        </table>
+        <input type="submit" value="submit"/>
+    </form>
+}
+

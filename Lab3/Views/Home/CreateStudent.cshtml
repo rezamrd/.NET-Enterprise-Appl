@@ -1,0 +1,51 @@
+﻿@{
+
+    Layout = "_Layout";
+
+}
+ <form asp-controller="HomeController" asp-action="DisplayStudent" method="post">
+    <table>
+        <tr>
+            <td>
+                First Name:
+                <input type="text" name="FName" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Last Name:
+                <input type="text" name="LName" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Student ID:
+                <input type="number" min="0" name="Id" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email Address:
+                <input type="email" name="email" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password:
+                <input type="password" name="Password" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Description:
+                <input type="text" name="Desc" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Submit" />
+            </td>
+        </tr>
+    </table>
+    </form>
+
