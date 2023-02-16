@@ -19,14 +19,13 @@ namespace Lab3.Controllers
         }
 
         [HttpGet]
-        public IActionResult CreateStudent() { return View(); }
+        public IActionResult CreateStudent() => View(); 
 
         [HttpPost]
         public IActionResult DisplayStudent(Student student)
         {
 
             return View(student);
-
 
         }
         public IActionResult Error()

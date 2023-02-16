@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\C# - .NET\\Lab3\\Lab3\\wwwroot\\css\\StyleSheet.css",
+      "PackagePath": "staticwebassets\\css\\StyleSheet.css"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.Lab3.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.Lab3.props",
+      "PackagePath": "build\\Lab3.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Lab3.props",
+      "PackagePath": "buildMultiTargeting\\Lab3.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.Lab3.props",
+      "PackagePath": "buildTransitive\\Lab3.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
