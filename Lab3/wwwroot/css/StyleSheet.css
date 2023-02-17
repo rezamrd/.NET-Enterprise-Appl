@@ -71,9 +71,50 @@ input{
 
 hr{
     width: 100%;
-    
+    color:red
+}
+
+.bottles-num{
+
+    background-color: red;
+    color: white;
+    padding: 5%;
+    border-radius: 50px
 
 }
+
+.bottles-num input{
+
+    margin-left: 20%;
+
+}
+
+.sing-form{
+
+    background-color: wheat;
+
+}
+
+
+    .sing-form input {
+        padding: 15px;
+        border: 0;
+        background-color: red;
+        color: white;
+        font-weight: 700;
+        box-shadow: 10px 5px 5px red;
+        cursor:pointer;
+        
+    }
+
+        .sing-form input:hover {
+
+            background-color: white;
+            color: red;
+            box-shadow: none;
+
+        }
+
 
 
 

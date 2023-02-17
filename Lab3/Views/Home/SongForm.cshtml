@@ -1,16 +1,17 @@
 ﻿@{
     ViewBag.Title = "SongForm";
+  <link href="~/css/StyleSheet.css" rel="stylesheet" asp-append-version="true" />
 }
 
 @{
     <form asp-controller="Home" asp-action="Sing" method="post">
 
-
-             <h3>Enter the number of bottles between 50 and 100:</h3>
+    <div class="bottles-num">
+        <h3>Enter the number of bottles between 50 and 100:</h3>
                 <input type="number" name="bottleQunatties" min="50" max="100"/>
 
-        <input type="submit" value="Sing!"/>
-
+        <input type="submit" value="Try Again!"/>
+            </div>
     </form>
 
 }

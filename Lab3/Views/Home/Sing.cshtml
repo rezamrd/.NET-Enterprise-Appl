@@ -5,10 +5,12 @@
     String bottles = Context.Session.GetString("bottleQunatties"); //Getting number of bottles
 
     Int32 bottlesInt = Convert.ToInt32(bottles);// Convert it to int32 signed 
-}
+    
+    <link href="~/css/StyleSheet.css" rel="stylesheet" asp-append-version="true" />
+}   
         
 
-    <body>
+    <body class="sing-form">
     <input type="submit" onclick="location.href='@Url.Action("SongForm","Home")'" value="Play again" />
     @for (var i = bottlesInt; i > -1; i--)
     {
