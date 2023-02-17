@@ -2,42 +2,49 @@
 @{
     Layout = "_Layout";
 
-    Int32 bottles = Convert.ToInt32(Context.Session.GetString("bottleQunatties"));
+    String bottles = Context.Session.GetString("bottleQunatties"); //Getting number of bottles
+
+    Int32 bottlesInt = Convert.ToInt32(bottles);// Convert it to int32 signed 
 }
+        
 
     <body>
     <input type="submit" onclick="location.href='@Url.Action("SongForm","Home")'" value="Play again" />
-    @for (var i = bottles; i > -1; i--)
+    @for (var i = bottlesInt; i > -1; i--)
     {
         if (i > 2)
         {
-            var bottle = i - 1;
-                    <p>@bottle green bottles hanging on the wall,</p>
-                    <p>@bottle green bottles hanging on the wall,</p>
-                    <p>And if one green bottle should accidentally fall,</p>
-                    <p>There'll be @bottle green bottles hanging on the wall.</p>
-                    <hr />
-                    <br \>
+            var count = i - 1;
+                                                    <p>@i green bottles hanging on the wall,</p>
+                                                    <p>@i green bottles hanging on the wall,</p>
+                                                    <p>And if one green bottle should accidentally fall,</p>
+                                                    <p>There'll be @count green bottles hanging on the wall.</p>
+                                                            <hr />
+                                                    <br \>
         }
-        else if (i == 2)
+
+
+       else if (i == 2)
         {
-            var bottle = i - 1;
-                    <p>@bottle green bottles hanging on the wall,</p>
-                    <p>@bottle green bottles hanging on the wall,</p>
-                    <p>And if one green bottle should accidentally fall,</p>
-                    <p>There'll be @bottle green bottle hanging on the wall.</p>
-                    <hr />
-                    <br \>
+            var count = i - 1;
+                                                    <p>@i green bottles hanging on the wall,</p>
+                                                    <p>@i green bottles hanging on the wall,</p>
+                                                    <p>And if one green bottle should accidentally fall,</p>
+                                                    <p>There'll be @count green bottle hanging on the wall.</p>
+                                                            <hr />
+                                                    <br \>
         }
         else if (i == 1)
         {
-            var bottle = i - 1;
-                    <p>@bottle green bottles hanging on the wall,</p>
-                    <p>@bottle green bottles hanging on the wall,</p>
-                    <p>And if one green bottle should accidentally fall,</p>
-                    <p>There'll be no green bottles hanging on the wall.</p>
-                    <hr />
-                    <br \>
+            var count = i - 1;
+                                                    <p>@i green bottles hanging on the wall,</p>
+                                                    <p>@i green bottles hanging on the wall,</p>
+                                                    <p>And if one green bottle should accidentally fall,</p>
+                                                    <p>There'll be no green bottles hanging on the wall.</p>
+                                                            <hr />
+                                                    <br \>
+                                   
         }
-    }
+
+      }
 </body>

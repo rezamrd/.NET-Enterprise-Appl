@@ -1,4 +1,5 @@
 ﻿using Lab3.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Lab3.Controllers
@@ -19,7 +20,7 @@ namespace Lab3.Controllers
         }
 
         [HttpGet]
-        public IActionResult CreateStudent() => View(); 
+        public IActionResult CreateStudent() { return View(); }
 
         [HttpPost]
         public IActionResult DisplayStudent(Student student)
