@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<header>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Clients" asp-action="Index">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="NewsBoards" asp-action="Index">NewsBoard</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+</header>
+<body>
+    <div class="content">
+        @RenderBody()
+
+         @RenderSection("Scripts", required: false)
+    </div>
+</body>
+</html>
